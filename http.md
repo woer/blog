@@ -1,12 +1,39 @@
 http://kb.cnblogs.com/page/92320/
  http（超文本传输协议）是一个基于请求与响应模式的、无状态的、的协议
+      http请求由三部分组成，分别是：请求行、消息报头、请求正文
+      请求行包括：method url version
+      消息报头包括
+    　　Accept-Charset: GB2312,utf-8;q=0.7
+    　　Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+    　　Accept-Encoding: gzip, deflate
+    　　User-Agent: Mozilla/5.0 (compatible; 域名)
+    　　Host: 域名
+    　　Connection: Keep-Alive
+        upgrade：“”，
+        cookie，
+        Referer:
+        Cache-Control
+
+    响应头包括 version 状态码
+    Date:Mon,31Dec200104:25:57GMT
+    Server:Apache/1.3.14(Unix)
+    Content-type:text/html
+    Content-length:39725426
+    Last-modified:Tue,17Apr200106:46:28GMT
+    Etag:"a030f020ac7c01:1e9f"，
+    Expires：
+
+    每一个报头域都是由名字+“：”+空格+值 组成，消息报头域的名字是大小写无关的。
+
+
+
+ http（超文本传输协议）是一个基于请求与响应模式的、无状态的、的协议
      http请求由三部分组成，分别是：请求行、消息报头、请求正文
 		 1、请求行以一个方法符号开头，以空格分开，后面跟着请求的URI和协议的版本，格式如下：Method Request-URI HTTP-Version CRLF  
 HTTP消息报头包括普通报头、请求报头、响应报头、实体报头。
-每一个报头域都是由名字+“：”+空格+值 组成，消息报头域的名字是大小写无关的。
 
 请求时的缓存指令包括：no-cache（用于指示请求或响应消息不能缓存）、no-store、max-age、max-stale、min-fresh、only-if-cached;
-响应时的缓存指令包括：public、private、no-cache、no-store、no-transform、must-revalidate、proxy-revalidate、max-age、s-maxage. 
+响应时的缓存指令包括：public、private、no-cache、no-store、no-transform、must-revalidate、proxy-revalidate、max-age、s-maxage.
 
 Accept
 Accept请求报头域用于指定客户端接受哪些类型的信息。eg：Accept：image/gif，表明客户端希望接受GIF图象格式的资源；Accept：text/html，表明客户端希望接受html文本。
