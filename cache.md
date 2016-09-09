@@ -8,3 +8,14 @@
 用户行为与缓存
 Ctrl+F5刷新 都无效
 F5/按钮刷新 Expires/Cache-Control 无效
+
+304，就代表这个资源在客户端中的缓存依然是有效的，即在上次拿到资源到当前这段时间之内服务器端并没有对这个资源做修改。
+扑所迷离的 etag 与 last-modified
+
+
+https://github.com/rccoder/blog/issues/12
+
+Cache-Control —— 请求服务器之前
+Expires —— 请求服务器之前
+If-None-Match (Etag) —— 请求服务器
+If-Modified-Since (Last-Modified) —— 请求服务器
