@@ -82,3 +82,7 @@ Last-Modified
 Last-Modified实体报头域用于指示资源的最后修改日期和时间。
 Expires
 Expires实体报头域给出响应过期的日期和时间。为了让代理服务器或浏览器在一段时间以后更新缓存中(再次访问曾访问过的页面时，直接从缓存中加载，缩短响应时间和降低服务器负载)的页面，我们可以使用Expires实体报头域指定页面过期的时间。eg：Expires：Thu，15 Sep 2006 16:23:12 GMT
+
+
+Content-Security-Policy: default-src 'self'
+Access-Control-Allow-Origin
