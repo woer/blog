@@ -12,8 +12,4 @@ OAuth的作用就是让"客户端"安全可控地获取"用户"的授权，与"�
 
 client_id 示使用的授权模式，必选项，此处的值固定为"authorization_code"
 redirect_uri：表示重定向URI，可选项
-'
-
-
-
 grant_type表示客户端ID，必选项。'
